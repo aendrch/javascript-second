@@ -49,3 +49,12 @@ function wordCount(text) {
 
 console.log(wordCount('This is a sample text.')); // 5
 console.log(wordCount('   Extra   spaces   ')); // 2
+
+// 6. Reversa de una cadena de texto
+
+function reverseString(text) {
+  return text.split('').reverse().join('');
+}
+
+console.log(reverseString('hello')); // olleh
+console.log(reverseString('12345')); // 54321
