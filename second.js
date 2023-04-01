@@ -22,3 +22,11 @@ function celsiusToFahrenheit(celsius) {
 
 console.log(celsiusToFahrenheit(0)); // 32
 console.log(celsiusToFahrenheit(100)); // 212
+
+// 3. Generador de números aleatorios
+
+function randomNum(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+console.log(randomNum(1, 10)); // Random number between 1 and 10
