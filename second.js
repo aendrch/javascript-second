@@ -58,3 +58,12 @@ function reverseString(text) {
 
 console.log(reverseString('hello')); // olleh
 console.log(reverseString('12345')); // 54321
+
+// 7. Ordenar de números 
+
+function sortNumbers(numbers) {
+  return numbers.sort((a, b) => a - b);
+}
+
+console.log(sortNumbers([3, 1, 4, 2, 5])); // [1, 2, 3, 4, 5]
+ 
