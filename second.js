@@ -66,4 +66,23 @@ function sortNumbers(numbers) {
 }
 
 console.log(sortNumbers([3, 1, 4, 2, 5])); // [1, 2, 3, 4, 5]
- 
+
+// 8. Comprobar si un número es primo:
+
+function isPrime(num) {
+  if (num <= 1) {
+    return false;
+  } else if (num === 2) {
+    return true;
+  } else {
+    for (let i = 2; i < num; i++) {
+      if (num % i === 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+}
+
+console.log(isPrime(7)); // true
+console.log(isPrime(10)); // false
