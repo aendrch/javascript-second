@@ -40,3 +40,12 @@ function validateEmail(email) {
 
 console.log(validateEmail('example@mail.com')); // true
 console.log(validateEmail('example@mail.')); // false
+
+// 5. Contador de palabras en un texto
+
+function wordCount(text) {
+  return text.trim().split(/\s+/).length;
+}
+
+console.log(wordCount('This is a sample text.')); // 5
+console.log(wordCount('   Extra   spaces   ')); // 2
