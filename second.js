@@ -30,3 +30,13 @@ function randomNum(min, max) {
 }
 
 console.log(randomNum(1, 10)); // Random number between 1 and 10
+
+// 4. Validador de correo electrónico
+
+function validateEmail(email) {
+  const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+  return regex.test(email);
+}
+
+console.log(validateEmail('example@mail.com')); // true
+console.log(validateEmail('example@mail.')); // false
