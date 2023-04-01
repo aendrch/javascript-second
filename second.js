@@ -86,3 +86,10 @@ function isPrime(num) {
 
 console.log(isPrime(7)); // true
 console.log(isPrime(10)); // false
+
+// 9. Generador de contraseñas aleatorias
+
+function generatePassword(length) {
+  const chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-=';
+  let password = '';
+  for (let i = 0
