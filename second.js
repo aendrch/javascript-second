@@ -92,4 +92,26 @@ console.log(isPrime(10)); // false
 function generatePassword(length) {
   const chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-=';
   let password = '';
-  for (let i = 0
+  for (let i = 0)
+
+// 10. GOLDEN RATIO BBY
+
+function goldenRatio(num) {
+  if (num <= 0) {
+    return 'Invalid input';
+  } else if (num === 1) {
+    return 1;
+  } else {
+    let prev = 1;
+    let current = 1;
+    for (let i = 2; i <= num; i++) {
+      let next = prev + current;
+      prev = current;
+      current = next;
+    }
+    return current / prev;
+  }
+}
+
+console.log(goldenRatio(10)); // 1.6176470588235294
+
