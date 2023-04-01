@@ -13,3 +13,12 @@ function calculator(num1, num2, operator) {
     return 'Invalid operator';
   }
 }
+
+// 2. Convertir grados Celsius a Fahrenheit
+
+function celsiusToFahrenheit(celsius) {
+  return (celsius * 9/5) + 32;
+}
+
+console.log(celsiusToFahrenheit(0)); // 32
+console.log(celsiusToFahrenheit(100)); // 212
